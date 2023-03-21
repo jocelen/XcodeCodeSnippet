@@ -1,2 +1,2 @@
-# XcodeCodesnippet
+# XcodeCodeSnippet
 code snippets for Xcode
