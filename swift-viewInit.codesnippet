@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wd-viewInit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: -  life cycle
+
+override init(frame: CGRect) {
+    super.init(frame: frame)
+    self.loadConfig()
+    self.addSubviews()
+}
+
+required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    self.loadConfig()
+    self.addSubviews()
+}
+
+deinit {
+    debugPrint("\(self.classForCoder) 被销毁了")
+}
+
+override func layoutSubviews() {
+    super.layoutSubviews()
+}
+
+override func draw(_ rect: CGRect) {
+    super.draw(rect)
+}
+
+// MARK: -  private methods
+
+// 加载初始配置
+private func loadConfig() {
+    self.backgroundColor = .clear
+    
+}
+
+// 添加view
+private func addSubviews() {
+    
+    
+}
+
+@objc func clickAction(sender:UIButton?) {
+    
+}
+
+// MARK: -  public methods
+
+
+// MARK: -  getters and setters
+
+private lazy var &lt;#property name#&gt;: &lt;#class#&gt; = {
+    
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>18D3F874-4BDD-4509-8C77-FF5EAA9B01F0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>view 快捷初始化</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

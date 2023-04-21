@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wd-single-objectc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class &lt;#class#&gt;: NSObject {
+
+    static let shared = &lt;#class#&gt;()
+    
+    // Make sure the class has only one instance
+    // Should not init or copy outside
+    private override init() {}
+    
+    override func copy() -&gt; Any {
+        return self // SingletonClass.shared
+    }
+    
+    override func mutableCopy() -&gt; Any {
+        return self // SingletonClass.shared
+    }
+    
+    // Optional
+    func reset() {
+        // Reset all properties to default value
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D24B171F-7C3F-4AE0-B782-5FAFB9F8F5AD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift单例-继承OC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

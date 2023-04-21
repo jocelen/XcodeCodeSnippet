@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wd-viewInit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+
+@interface &lt;#viewClass#&gt; ()
+
+@end
+
+
+@implementation &lt;#viewClass#&gt;
+
+
+// MARK: -  life cycle
+
+-(instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        [self loadConfig];
+        [self addSubviews];
+        [self loadData];
+    }
+    return self;
+}
+
+-(void)awakeFromNib
+{
+    [super awakeFromNib];
+    [self loadConfig];
+    [self addSubviews];
+    [self loadData];
+}
+
+
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+}
+
+// MARK: -  private methods
+
+// 加载初始配置
+-(void)loadConfig {
+    
+    
+}
+
+// 添加view
+-(void)addSubviews {
+    
+    
+}
+
+// 加载数据
+-(void)loadData {
+    
+    
+}
+
+
+// MARK: -  public methods
+
+
+
+
+// MARK: -  getters and setters
+
+
+
+
+
+
+
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2668AB91-2766-4649-9EC8-561973E6C153</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>view 快捷初始化</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

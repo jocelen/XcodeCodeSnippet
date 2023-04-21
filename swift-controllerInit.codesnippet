@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wd-controllerInit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    
+    // MARK: -  life cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.loadConfig()
+        self.addSubviews()
+        self.loadData()
+    }
+    
+    deinit {
+        debugPrint("\(self.classForCoder) 被销毁了")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
+    
+    // MARK: -  private methods
+    
+    // 加载初始配置
+    private func loadConfig() {
+        
+        
+    }
+    
+    // 添加view
+    private func addSubviews() {
+        
+        
+    }
+    
+    // 加载数据
+    private func loadData() {
+        
+        
+    }
+    
+    // MARK: -  public methods
+    
+    
+    // MARK: -  getters and setters
+    
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>95DA39C6-1DCC-4DF9-AB13-7E2DF2C1C57C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>controller 快捷初始化 swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
